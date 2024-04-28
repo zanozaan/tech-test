@@ -1,0 +1,31 @@
+GET http://localhost:4001/products
+
+###
+GET http://localhost:4001/products/1
+
+###
+POST http://localhost:4001/products
+Content-Type: application/json
+
+{
+    "merk_product": "Toyota",
+    "jenis_product": "SUV",
+    "jumlah_stok": "4",
+    "harga": "100000000",
+    "keterangan": "tangan ke 2"
+}
+
+###
+PATCH http://localhost:4001/products/1
+Content-Type: application/json
+
+{
+    "merk_product": "Honda",
+    "jenis_product": "Sedan",
+    "jumlah_stok": "2",
+    "harga": "90000000",
+    "keterangan": "tangan ke 3"
+}
+
+###
+DELETE http://localhost:4001/products/2
